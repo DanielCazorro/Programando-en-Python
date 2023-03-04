@@ -1,3 +1,4 @@
+# Relizamos ejercicios básicos con turtle utilizando un bucle for
 import turtle
 
 miTortuga = turtle.Turtle()
