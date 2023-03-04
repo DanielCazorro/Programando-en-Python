@@ -1,3 +1,4 @@
+# Realizamos operación para que en función de los lados pueda crear el programa la figura deseada
 import turtle
 
 miTortuga = turtle.Turtle()
