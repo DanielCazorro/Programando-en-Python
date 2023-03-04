@@ -1,3 +1,4 @@
+# Realizamos cuadrado o triángulo utilizando variables
 import turtle
 
 miTortuga = turtle.Turtle()
