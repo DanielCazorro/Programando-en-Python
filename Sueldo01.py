@@ -6,11 +6,17 @@ strMiSueldo = input("Introduce sueldo: ")
 miSueldo = float(strMiSueldo)
 
 ix = 0
-while miSueldo >= sueldos[ix]:
+while ix < 7 and miSueldo >= sueldos[ix]:
     ix = ix + 1
 
-retencion = retenciones[ix - 1] + ((miSueldo - sueldos[ix - 1]) * (
-    retenciones[ix] - retenciones[ix - 1]) / (sueldos[ix] - sueldos[ix - 1]))
+if ix == 0:
+    retencion = 0
+elif ix == 7:
+    retencion = 45
+else:
+    retencion = retenciones[ix - 1] + ((miSueldo - sueldos[ix - 1]) * (
+        retenciones[ix] - retenciones[ix - 1]) / (sueldos[ix] - sueldos[ix - 1]))
+
 
 retencionTotal = retencion + 6.35
 
