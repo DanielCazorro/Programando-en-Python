@@ -1,7 +1,8 @@
+# Realizamos un cuadrado con instrucciones básicas de tortuga
 import turtle
 
 miTortuga = turtle.Turtle()
-# Realizamos un cuadrado con instrucciones básicas de tortuga
+
 miTortuga.forward(50)  # Aquí avanzamos 50 pixels
 miTortuga.left(90)  # Aquí giramos 90 grados
 miTortuga.forward(50)
