@@ -1,3 +1,4 @@
+# Creamos una variable que se llame lados, para poder añadir mas bucles if si son necesarios
 import turtle
 
 miTortuga = turtle.Turtle()
