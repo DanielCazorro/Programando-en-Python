@@ -19,11 +19,11 @@ def buscaRetencion(s):
     return retencion
 
 
-def netoAnual(r):
+def netoAnual(s, r):
 
     retencionTotal = r + 6.35
 
-    miSueldoNeto = miSueldo * (100-retencionTotal)/100
+    miSueldoNeto = s * (100-retencionTotal)/100
 
     return miSueldoNeto
 
@@ -35,7 +35,7 @@ miSueldo = float(strMiSueldo)
 retenicion = buscaRetencion(miSueldo)
 
 # Cálculo de pagas
-miSueldoNeto = netoAnual(retenicion)
+miSueldoNeto = netoAnual(miSueldo, retenicion)
 
 mensual12 = miSueldoNeto/12
 mensual14 = miSueldoNeto/14
