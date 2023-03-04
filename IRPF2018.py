@@ -18,10 +18,10 @@ def buscaRetencion(s):
     return retencion
 
 
-def netoAnual(r):
+def netoAnual(s, r):
 
     retencionTotal = r + 6.35
 
-    miSueldoNeto = miSueldo * (100-retencionTotal)/100
+    miSueldoNeto = s * (100-retencionTotal)/100
 
     return miSueldoNeto
