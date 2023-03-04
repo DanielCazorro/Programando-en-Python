@@ -4,7 +4,7 @@ miTortuga = turtle.Turtle()
 
 respuesta = input("¿Quieres un triángulo?(S/N) ")
 
-if respuesta == 'S':
+if respuesta == 'S' or respuesta == 's':
 
     for _ in range(0, 3):
         miTortuga.forward(50)  # Aquí avanzamos 50 pixels
@@ -13,4 +13,4 @@ if respuesta == 'S':
 else:
     for _ in range(0, 4):
         miTortuga.forward(50)  # Aquí avanzamos 50 pixels
-        miTortuga.left(90)  # Aquí giramos 120 grados
+        miTortuga.left(90)  # Aquí giramos 90 grados
