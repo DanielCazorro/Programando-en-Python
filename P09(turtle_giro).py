@@ -1,3 +1,4 @@
+# Añadimos un giro en el bucle for, así vemos como se puden dibujar formas y la potencia del bucle
 import turtle
 
 miTortuga = turtle.Turtle()
