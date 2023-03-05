@@ -1,3 +1,3 @@
-nombre = prompt("¿Cuál es tu nombre? ")
+let nombre = prompt("¿Cuál es tu nombre? ")
 
 alert("Hola, " + nombre)
