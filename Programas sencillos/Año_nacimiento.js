@@ -1,6 +1,6 @@
 // Pedimos el nombre
 let nombre = prompt("¿Cómo te llamas? ")
-alert("Hola", nombre)
+alert("Hola " + nombre)
 
 //  Pedimos la edad y la convertimos a int
 edad = prompt("¿Cuántos años tienes? ")
@@ -18,4 +18,4 @@ else {
     a_nacimiento = (a_actual - edad) - 1
 }
 //  Mostramos el resultado
-alert(nombre, "naciste en", a_nacimiento)
+alert(nombre + " naciste en " + a_nacimiento)
