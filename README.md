@@ -1,7 +1,6 @@
 # Programando-en-Python
 Algunas pruebas de programación con Python sencillas
 
-
 # Entorno Virtual 
 En primer lugar, creamos el entorno virtual donde instalar packages
 
@@ -11,3 +10,7 @@ En primer lugar, creamos el entorno virtual donde instalar packages
     En Windows, utilizamos en el siguiente comando en el terminal para activar el entorno: `env\Scripts\activate`
 3. Instalar Packages
     Una vez en el entorno virtual (lo sabremos porque a la izquierda de la ruta, vemos (env)) procedemos a instalar los packages necesarios, que se encontraran en el archivo requirements.txt. Para ellos desde el terminal utilizamos: `pip install -r requirements.txt`
+
+# Ejercicio Cálculo IRPF
+
+Se ha utilizado los datos de 2023, se pueden encontrar en `https://www.bankinter.com/blog/finanzas-personales/como-calcular-retenciones-irpf-nomina`
