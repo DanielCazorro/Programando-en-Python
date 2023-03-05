@@ -10,8 +10,13 @@ edad = int(StrEdad)
 StrA_actual = input("¿En qué año estamos? ")
 a_actual = int(StrA_actual)
 
+has_cumplido = input("¿Has cumplido años ya (S/N)? ")
+
 # Realizamos el cálculo
-a_nacimiento = a_actual - edad
+if has_cumplido == "S":
+    a_nacimiento = a_actual - edad
+else:
+    a_nacimiento = (a_actual - edad) - 1
 
 # Mostramos el resultado
 print(nombre, "naciste en", a_nacimiento)
