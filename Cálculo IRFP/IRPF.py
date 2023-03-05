@@ -47,3 +47,14 @@ elif sueldo_a_retener <= 299999:
     porcentaje = 45
 else:
     porcentaje = 47
+
+monton_anual = sueldo_a_retener * porcentaje/100
+monto_mensual = monton_anual/12
+
+# Mostramos resultados
+print("Sueldo anual: \t", sueldo)
+print("Situación: \t", situacion)
+print("Base a retener: \t", sueldo_a_retener)
+print("Porcentaje: \t", porcentaje)
+print("Total anual: \t", monton_anual)
+print("Retención mensual: \t", monto_mensual)
