@@ -71,9 +71,16 @@ monton_anual = sueldo_a_retener * porcentaje / 100
 monto_mensual = monton_anual / 12
 
 //  Mostramos resultados
-alert("Sueldo anual: \t", sueldo)
-alert("Situación: \t", situacion)
-alert("Base a retener: \t", sueldo_a_retener)
-alert("Porcentaje: \t", porcentaje)
-alert("Total anual: \t", monton_anual)
-alert("Retención mensual: \t", monto_mensual)
+console.log("Sueldo anual: \t" + sueldo)
+console.log("Situación: \t" + situacion)
+console.log("Base a retener: \t" + sueldo_a_retener)
+console.log("Porcentaje: \t" + porcentaje)
+console.log("Total anual: \t" + monton_anual)
+console.log("Retención mensual: \t" + monto_mensual)
+
+alert("Sueldo anual: \t" + sueldo)
+alert("Situación: \t" + situacion)
+alert("Base a retener: \t" + sueldo_a_retener)
+alert("Porcentaje: \t" + porcentaje)
+alert("Total anual: \t" + monton_anual)
+alert("Retención mensual: \t" + monto_mensual)
