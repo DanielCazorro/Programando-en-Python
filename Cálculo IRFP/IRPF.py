@@ -6,6 +6,7 @@ situacion = input("Situación (1/2/3)")
 num_hijos = int(input("Número de hijos: "))
 
 # Calcular exención
+exencion = 0
 if situacion == '1':
     if num_hijos <= 0:
         exencion = 0
@@ -22,10 +23,12 @@ if situacion == '2':
     else:
         exencion = 19241
 
-if situacion == '1':
+if situacion == '3':
     if num_hijos <= 0:
         exencion = 15000
     elif num_hijos == 1:
         exencion = 15599
     else:
         exencion = 16272
+
+sueldo_a_retener = sueldo - exencion
