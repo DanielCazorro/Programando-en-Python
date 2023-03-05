@@ -2,7 +2,7 @@
 
 # Obtención de datos
 sueldo = float(input("Sueldo: "))
-situacion = input("Situación (1/2/3)")
+situacion = input("Situación (1/2/3) ")
 num_hijos = int(input("Número de hijos: "))
 
 # Calcular exención
@@ -32,3 +32,18 @@ if situacion == '3':
         exencion = 16272
 
 sueldo_a_retener = sueldo - exencion
+
+# Obtener retencion
+
+if sueldo_a_retener <= 12450:
+    porcentaje = 19
+elif sueldo_a_retener <= 20199:
+    porcentaje = 24
+elif sueldo_a_retener <= 35199:
+    porcentaje = 30
+elif sueldo_a_retener <= 59999:
+    porcentaje = 37
+elif sueldo_a_retener <= 299999:
+    porcentaje = 45
+else:
+    porcentaje = 47
