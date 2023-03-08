@@ -4,3 +4,5 @@ def extraer_vocales(palabra):
         if caracter.upper() in 'AEIOU':
             vocales += caracter
     print(f"Las vocales de su palabra {palabra} son: {vocales}")
+
+    return vocales
