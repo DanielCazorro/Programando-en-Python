@@ -7,4 +7,5 @@ nombre = prompt("Escriba su nombre: ")
 
 texto = "Hola "
 
+console.log(texto + nombre)
 alert(texto + nombre)
