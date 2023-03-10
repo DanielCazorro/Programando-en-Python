@@ -5,7 +5,7 @@ function notaNumerica(letra) {
 
     puntero = 0
 
-    while (letras[puntero] != letra) {
+    while (letras[puntero] != letra && puntero < letras.lenght) {
         puntero += 1
     }
 
