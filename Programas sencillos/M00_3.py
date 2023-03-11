@@ -10,3 +10,12 @@ cita = input("Escriba la cita deseada: ")
 autor = input("Escriba el autor de su cita: ")
 
 print("La cita:'", cita, "', pertenece al autor:'", autor, "'.")
+
+
+# ESTA ES OTRA FORMA CORRECTA A LA SUPERIOR
+
+# cita = input("Introduce una frase famosa, por favor: ")
+# autor = input("¿Quien es su autor? ")
+
+# output = '\'' + cita + '\', ' + autor
+# print(output)
