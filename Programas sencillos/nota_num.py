@@ -14,14 +14,17 @@ def nota_numerica(letra):
 num_notas = 0
 sum_notas = 0
 
-nota = input("Nota o vacío para terminar: ")
+nota = input("Escriba la nota o deje en blanco para terminar: ")
 
 while nota != "":
-    num_notas += 1
-    valor_nota = nota_numerica(nota)
-    sum_notas += valor_nota
+    try:
+        valor_nota = nota_numerica(nota)
+        num_notas += 1
+        sum_notas += valor_nota
+    except IndexError:
+        print("Nota", nota, "es incorrecta. Vuelva a intentarlo")
 
-    nota = input("Nota o vacío para terminar: ")
+    nota = input("Escriba la nota o deje en blanco para terminar: ")
 
 media = sum_notas / num_notas
 
