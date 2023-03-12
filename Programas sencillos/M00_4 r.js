@@ -24,7 +24,7 @@ const verbo2 = prompt("Escriba otro verbo: ")
 const adverbio2 = prompt("Escriba otro adverbio: ")
 const adjetivo2 = prompt("Escriba otro adjetivo: ")
 
-console.log(
+alert(
     `Esta es la historia del ${adjetivo} ${nombre}. Su mayor virtud era poder ${verbo} ${adverbio} toda la noche. De repente vio dos puertas, con los números 41 y 22.`)
 
 let camino = "";
