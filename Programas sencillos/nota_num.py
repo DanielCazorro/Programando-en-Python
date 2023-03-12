@@ -17,6 +17,7 @@ sum_notas = 0
 nota = input("Escriba la nota o deje en blanco para terminar: ")
 
 while nota != "":
+    nota = nota.upper()
     try:
         valor_nota = nota_numerica(nota)
         num_notas += 1
@@ -26,6 +27,9 @@ while nota != "":
 
     nota = input("Escriba la nota o deje en blanco para terminar: ")
 
-media = sum_notas / num_notas
+if num_notas == 0:
+    print("No se han introducido datos.")
+else:
+    media = sum_notas / num_notas
 
-print(f"La nota media es: {media}")
+    print(f"La nota media es: {media}")
