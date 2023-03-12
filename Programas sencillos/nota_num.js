@@ -21,7 +21,10 @@ sumNotas = 0
 nota = prompt("Nota o vacío para acabar")
 
 while (nota != "") {
-    nota = nota.toUpperCase()
+    if (nota != null) {
+        nota = nota.toUpperCase()
+    }
+
 
     try {
         valorNota = notaNumerica(nota)
