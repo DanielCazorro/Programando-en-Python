@@ -4,15 +4,16 @@ function notaNumerica(letra) {
 
     puntero = 0
 
-    while (letras[puntero] != letra && puntero < letras.lenght) {
+    while (letras[puntero] != letra && puntero < letras.length) {
         puntero += 1
     }
 
-    if (puntero == letras.lenght) {
-        throw new Error("Nota " + letra + " inexistente.")
+    if (puntero == letras.length) {
+        throw new Error("Nota" + letra + "inexistente")
     }
     return notas[puntero]
 }
+
 
 numNotas = 0
 sumNotas = 0
