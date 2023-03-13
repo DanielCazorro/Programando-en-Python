@@ -24,3 +24,15 @@ division = intUno / intDos
 
 print(
     f"Las operaciones de los números {intUno} y {intDos} son:\nSuma: {suma}\nResta: {resta}\nProducto: {producto}\nDivision: {division}")
+
+
+# OTRA FORMA DE HACERLO EN MENOS LINEAS
+
+# strOp1 = input("Introduce un número: ")
+# strOp2 = input("Introduce un segundo número:")
+
+# op1 = float(strOp1)
+# op2 = float(strOp2)
+
+# print("{} + {} = {}\n{} - {} = {}\n{} · {} = {}\n{} / {} = {}\n".format(op1,
+#       op2, op1+op2, op1, op2, op1-op2, op1, op2, op1*op2, op1, op2, op1/op2))
