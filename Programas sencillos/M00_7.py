@@ -13,6 +13,8 @@
 # 2. Crea una versión del programa que permita elegir si la entrada va en metros o en yardas
 
 # Datos
+eleccion = input("¿Desea introducir sus datos en metros o yardas? ")
+
 ancho = 0
 while ancho <= 0:
     try:
@@ -31,9 +33,14 @@ while profundidad <= 0:
 
 # Operaciones
 tasa_yarda = 0.83612736
-
 superficie = ancho * profundidad
-superficie_yardas = superficie / tasa_yarda
 
-print(
-    f"La superficie en metros cuadrados será: {superficie} y en yardas cuadradas será: {superficie_yardas}")
+if eleccion.lower() == 'metros':
+    superficie_yardas = superficie / tasa_yarda
+    print(
+        f"La superficie en {eleccion} cuadrados será: {superficie} y en yardas cuadradas será: {superficie_yardas}")
+
+else:
+    superficie_yardas = superficie * tasa_yarda
+    print(
+        f"La superficie en {eleccion} cuadradas será: {superficie} y en yardas cuadradas será: {superficie_yardas}")
