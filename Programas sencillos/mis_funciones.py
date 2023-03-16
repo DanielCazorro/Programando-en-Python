@@ -4,6 +4,7 @@ def nota_numerica(letra):
     notas = [4, 4, 3.7, 3.3, 3, 2.7, 2.3, 2, 1.7, 1.3, 1, 0]
 
     puntero = 0
+    letra = letra.upper()
 
     while letras[puntero] != letra:
         puntero += 1
