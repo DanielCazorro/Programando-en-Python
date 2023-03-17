@@ -14,6 +14,7 @@
 
 # Datos
 bote = 5
+tasa_conversion = 0.05
 
 ancho = 0
 while ancho <= 0:
@@ -36,7 +37,7 @@ while alto <= 0:
 # Operaciones
 superficie = ancho * alto
 
-litros_necesarios = (superficie * 5) / 100
+litros_necesarios = superficie * tasa_conversion
 
 if litros_necesarios % bote == 0:
     botes_necesarios = int(litros_necesarios / bote)
