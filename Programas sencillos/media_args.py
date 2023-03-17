@@ -14,3 +14,20 @@ def media(*notas):
 def multientrada(*valores):
     for valor in valores:
         print(valor * 2)
+
+
+def boletin(**asignaturas):
+    # notas = []
+    for asignatura, nota in asignaturas.items():
+        print(asignatura, "-", nota)
+        # notas.append(nota)
+
+    notas = list(asignaturas.values())
+    nota_media = media(*notas)
+    print("Media:", nota_media)
+
+
+def multientrada_1(**pares_clave_valor):
+    print(pares_clave_valor)
+    for clave, valor in pares_clave_valor.items():
+        print(clave, "-", valor)
