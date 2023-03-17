@@ -91,7 +91,8 @@ else:
             print("Debe introducir un número válido, positivo y mayor que cero")
             alto_2 = 0
 
-    # Operaciones
+
+# Operaciones
 if tipo_habitacion == "1":
     superficie = ancho * alto
 
