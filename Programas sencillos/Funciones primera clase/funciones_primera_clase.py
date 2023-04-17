@@ -10,7 +10,7 @@ gritando = voz_alta
 susurrando = voz_baja
 
 
-def saludar(saludo):
+def saludar(saludo, modo):
     print('*' * len(saludo))
-    print(saludo)
+    print(modo(saludo))
     print('.' * len(saludo))
