@@ -6,3 +6,11 @@ def cesar(caracter, clave):
     nposicion = posicion + clave
     nposicion = nposicion % len(ALFABETO)
     return ALFABETO[nposicion]
+
+
+def cifrar(mensaje, clave):
+    resultado = ''
+    for caracter in mensaje:
+        nuevo_caracter = cesar(caracter, clave)
+        resultado += nuevo_caracter
+    return resultado
