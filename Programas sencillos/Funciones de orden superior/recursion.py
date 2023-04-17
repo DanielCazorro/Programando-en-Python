@@ -16,3 +16,7 @@ def sumaorioR_funcion(n, f):
 
 
 print(sumatorioR(100), sumatorio(100))
+
+print(sumatorio(1000))
+#  El límite de recursiones de python, que es de 1.000
+print(sumatorioR(995))
