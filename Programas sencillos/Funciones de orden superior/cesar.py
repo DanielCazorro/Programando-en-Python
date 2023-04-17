@@ -14,3 +14,15 @@ def cifrar(mensaje, clave):
         nuevo_caracter = cesar(caracter, clave)
         resultado += nuevo_caracter
     return resultado
+
+
+def creaEncriptador(clave):
+
+    def encriptar(mensaje):
+        res = ""
+        for caracter in mensaje:
+            nuevo_caracter = cesar(caracter, clave)
+            res += nuevo_caracter
+        return res
+
+    return encriptar
