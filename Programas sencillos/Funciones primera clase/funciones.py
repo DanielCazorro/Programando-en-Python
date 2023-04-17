@@ -15,8 +15,8 @@ dialogo = [
     ('Perdona, ¿quieres una aspirina?', voz_baja)
 ]
 
-for frase in dialogo:
-    if frase[1] == None:
-        print(frase[0])
+for frase, modo in dialogo:
+    if modo == None:
+        print(frase)
     else:
-        print(frase[1](frase[0]))
+        print(modo(frase))
