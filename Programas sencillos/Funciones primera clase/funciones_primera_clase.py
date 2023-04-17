@@ -11,6 +11,8 @@ susurrando = voz_baja
 
 
 def saludar(saludo, modo):
-    print('*' * len(saludo))
-    print(modo(saludo))
-    print('.' * len(saludo))
+    saludo_formateado = modo(saludo)
+
+    print('*' * len(saludo_formateado))
+    print(saludo_formateado)
+    print('.' * len(saludo_formateado))
