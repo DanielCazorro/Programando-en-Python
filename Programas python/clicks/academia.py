@@ -28,7 +28,22 @@ class Alumno():
 
         self.asignaturas.append(asignatura)
 
-    """
+    def __str__(self):
+        return 'Alumno: {} {} - {}'.format(self.nombre, self.apellidos, self.correo_e)
+
+    def __repr__(self):
+        return self.__str__()
+
+
+class Profesor():
+    def __init__(self, n, ap, nif, correo_e, sueldo_base=200):
+        self.nombre = n
+        self.apellidos = ap
+        self.nif = nif
+        self.movil = ''
+        self.sueldo_base = sueldo_base
+        self.correo_e = correo_e
+
         self.asignaturas = []
 
     def alta_asignatura(self, asignatura):
@@ -36,13 +51,13 @@ class Alumno():
             raise Exception(
                 '{} debe ser del tipo Asignatura'.format(asignatura))
 
-        if not asignatura in self.asignaturas():
-            self.asignaturas.append(asignatura)
-
-    """
+        self.asignaturas.append(asignatura)
 
     def __str__(self):
-        return 'Alumno: {} {} - {}'.format(self.nombre, self.apellidos, self.correo_e)
+        return 'Profesor: {} - {} {} - {}'.format(self.nif, self.nombre, self.apellidos, self.correo_e)
 
     def __repr__(self):
         return self.__str__()
+
+    def sueldo(self):
+        return self.sueldo_base + len(self.asignaturas) * 300

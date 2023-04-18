@@ -1,4 +1,4 @@
-from academia import Alumno, Asignatura
+from academia import Alumno, Asignatura, Profesor
 
 roberto = Alumno('Roberto', 'Rodríguez')
 susana = Alumno('Susana', 'Martín')
@@ -23,3 +23,13 @@ roberto.alta_asignatura(chino)
 # [Asignatura: Inglés - A2 - (30.00 €/mes), Asignatura: Chino....]
 print(roberto.asignaturas)
 print(susana.asignaturas)
+
+donJose = Profesor("Jose", "Martín Fusta", "0W", "jf@gmail.com")
+print(donJose)  # Profesor: 0W - José Martín Fusta - jf@gmail.com
+
+print(donJose.sueldo())  # 200
+
+donJose.alta_asignatura(ingles)
+
+print(donJose.asignaturas)  # [Asignatura: Inglés - A2 - (30.00 €/mes)]
+print(donJose.sueldo())
