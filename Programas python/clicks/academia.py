@@ -59,5 +59,6 @@ class Profesor():
     def __repr__(self):
         return self.__str__()
 
+    @property  # Esto es un decorador que transforma en una propiedad
     def sueldo(self):
         return self.sueldo_base + len(self.asignaturas) * 300
