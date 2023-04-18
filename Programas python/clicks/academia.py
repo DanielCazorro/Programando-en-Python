@@ -43,23 +43,13 @@ class Alumno(Persona):
         return self.__str__()
 
 
-class Profesor():
+class Profesor(Persona):
     def __init__(self, n, ap, nif, correo_e, sueldo_base=200):
-        self.nombre = n
-        self.apellidos = ap
+        # Persona.__init__(self, n, ap) # Esta forma es equivalente a la inferior, es solo que la inferior es mas actual
+        super().__init__(n, ap)
+
         self.nif = nif
-        self.movil = ''
         self.sueldo_base = sueldo_base
-        self.correo_e = correo_e
-
-        self.asignaturas = []
-
-    def alta_asignatura(self, asignatura):
-        if not isinstance(asignatura, Asignatura):
-            raise Exception(
-                '{} debe ser del tipo Asignatura'.format(asignatura))
-
-        self.asignaturas.append(asignatura)
 
     def __str__(self):
         return 'Profesor: {} - {} {} - {}'.format(self.nif, self.nombre, self.apellidos, self.correo_e)
