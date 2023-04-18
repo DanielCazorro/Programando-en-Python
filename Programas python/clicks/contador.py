@@ -22,4 +22,10 @@ def creaContadorReutilizable(ini=0):
         if 'consulta' in kwargs:
             return clicks
 
+        if 'reset' in kwargs:
+            # Aquí se puede validar que kwargs['reset'] sea >= 0 y entero
+            clicks = kwargs['reset']
+            print('Reseteado a', clicks)
+            return clicks
+
     return contador
