@@ -19,4 +19,7 @@ def creaContadorReutilizable(ini=0):
             clicks += 1
             return clicks
 
+        if 'consulta' in kwargs:
+            return clicks
+
     return contador

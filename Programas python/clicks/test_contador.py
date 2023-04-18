@@ -8,6 +8,6 @@ clickR1 = creaContadorReutilizable()
 
 clickR2 = creaContadorReutilizable(5)
 
-print(click1(), clickR1())  # 1
+print(click1(), clickR1(consulta=True), clickR1(), clickR1(consulta=True))  # 1
 
-print(click2(), clickR2())  # 6
+print(click2(), clickR2(consulta=True), clickR2(), clickR2(consulta=True))  # 6
