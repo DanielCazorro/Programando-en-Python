@@ -5,3 +5,9 @@ class Alumno():
         self.apellidos = ap
         self.movil = ''
         self.correo_e = ''
+
+    def __str__(self):
+        return 'Alumno: {} {} - {}'.format(self.nombre, self.apellidos, self.correo_e)
+
+    def __repr__(self):
+        return self.__str__()
