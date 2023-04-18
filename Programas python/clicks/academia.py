@@ -19,14 +19,14 @@ class Alumno():
         self.movil = ''
         self.correo_e = ''
 
-        self.asignatura = None
+        self.asignaturas = []
 
     def alta_asignatura(self, asignatura):
         if not isinstance(asignatura, Asignatura):
             raise Exception(
                 '{} debe ser del tipo Asignatura'.format(asignatura))
 
-        self.asignatura = asignatura
+        self.asignaturas.append(asignatura)
 
     """
         self.asignaturas = []
