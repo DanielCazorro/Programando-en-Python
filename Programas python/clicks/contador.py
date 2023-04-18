@@ -10,4 +10,13 @@ def creaContador(ini=0):
 
 
 def creaContadorReutilizable(ini=0):
-    pass
+    clicks = ini
+
+    def contador(**kwargs):
+        nonlocal clicks
+
+        if len(kwargs) == 0:
+            clicks += 1
+            return clicks
+
+    return contador
