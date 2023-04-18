@@ -12,6 +12,14 @@ def creaContador(ini=0):
 def creaContadorReutilizable(ini=0):
     clicks = ini
 
+    def reset(v):
+        nonlocal clicks
+        clicks = v
+        return clicks
+
+    def consulta():
+        return clicks
+
     def contador(**kwargs):
         nonlocal clicks
 
@@ -20,12 +28,12 @@ def creaContadorReutilizable(ini=0):
             return clicks
 
         if 'consulta' in kwargs:
-            return clicks
+            return consulta()
 
         if 'reset' in kwargs:
-            # Aquí se puede validar que kwargs['reset'] sea >= 0 y entero
-            clicks = kwargs['reset']
-            print('Reseteado a', clicks)
-            return clicks
+            valor_inicial = kwargs('reset')
+            return reset(valor_inicial)
+
+        # raise Exception('Funcion desconocida')
 
     return contador
