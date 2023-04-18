@@ -28,19 +28,15 @@ class Persona():
         self.asignaturas.append(asignatura)
 
     def __str__(self):
-        return 'Persona: {} {} - {}'.format(self.nombre, self.apellidos, self.correo_e)
+        # return 'Persona: {} {} - {}'.format(self.nombre, self.apellidos, self.correo_e)
+        return '{}: {} {} - {}'.format(type(self).__name__, self.nombre, self.apellidos, self.correo_e)
 
     def __repr__(self):
         return self.__str__()
 
 
 class Alumno(Persona):
-
-    def __str__(self):
-        return 'Alumno: {} {} - {}'.format(self.nombre, self.apellidos, self.correo_e)
-
-    def __repr__(self):
-        return self.__str__()
+    pass
 
 
 class Profesor(Persona):
@@ -50,12 +46,6 @@ class Profesor(Persona):
 
         self.nif = nif
         self.sueldo_base = sueldo_base
-
-    def __str__(self):
-        return 'Profesor: {} - {} {} - {}'.format(self.nif, self.nombre, self.apellidos, self.correo_e)
-
-    def __repr__(self):
-        return self.__str__()
 
     @property  # Esto es un decorador que transforma en una propiedad
     def sueldo(self):
