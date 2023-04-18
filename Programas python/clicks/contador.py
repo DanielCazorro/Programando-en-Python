@@ -53,3 +53,19 @@ def creaContadorReutilizable(ini=0):
         # raise Exception('Funcion desconocida')
 
     return contador
+
+
+class Contador():
+    def __init__(self, ini=0):
+        self.clicks = ini
+
+    def click(self):
+        self.clicks += 1
+        return self.clicks
+
+    def consulta(self):
+        return self.clicks
+
+    def reset(self, v):
+        self.clicks = v
+        return self.clicks
