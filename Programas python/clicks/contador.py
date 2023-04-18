@@ -31,7 +31,7 @@ def creaContadorReutilizable(ini=0):
             return consulta()
 
         if 'reset' in kwargs:
-            valor_inicial = kwargs('reset')
+            valor_inicial = kwargs['reset']
             return reset(valor_inicial)
 
         # raise Exception('Funcion desconocida')

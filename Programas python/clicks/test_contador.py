@@ -17,6 +17,6 @@ clickR1()
 clickR1()
 
 print(clickR1(consulta=True))  # 4
-clickR1(reset=0)  # print el mensaje
+print(clickR1(reset=0))  # print 0
 print(clickR1(consulta=True))  # 0
 print(clickR1())  # 1
