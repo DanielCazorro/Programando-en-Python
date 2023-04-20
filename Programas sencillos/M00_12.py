@@ -34,4 +34,4 @@ cantidad_ganada = A
 
 # Muestra de resultados
 
-print(f"Tras {anios} años de inversión al {interes} %, su cantidad debe ser: {cantidad_ganada:.2f}")
+print(f"Tras {anios} años de inversión al {interes} %, su cantidad debe ser: {cantidad_ganada:.2f} €")
