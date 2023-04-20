@@ -50,12 +50,15 @@ while anios == 0:
         print("Debe introducir un valor válido")
         anios = 0
 
+
 # Cálculos
 
 A = P * (1 + r*t)
 
 cantidad_ganada = A
 
+cantidad_anual = A/t
+
 # Muestra de resultados
 
-print(f"Tras {anios} años de inversión al {interes} %, su cantidad debe ser: {cantidad_ganada:.2f} €")
+print(f"Durante {anios} años, cada año ganará: {cantidad_anual} € \nTras {anios} años de inversión al {interes} %, su cantidad debe ser: {cantidad_ganada:.2f} €")
