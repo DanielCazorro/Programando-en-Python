@@ -28,4 +28,4 @@ tasa = subtotal * porcentaje_provincias[pais]
 total = subtotal + tasa
 
 print(
-    f"El subotal es : {subtotal} €\nLa tasa es: {tasa} €\nEl total es: {total} €")
+    f"El subotal es : {subtotal:.2f} €\nLa tasa es: {tasa:.2f} €\nEl total es: {total:.2f} €")
