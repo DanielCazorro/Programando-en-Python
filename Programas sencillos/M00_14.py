@@ -17,13 +17,14 @@
 # Permitir al usuario introducir su provincia en mayúsculas, minúsculas o mixto
 # Permitir al usuario introducir el nombre completo de su provincia en mayúsculas, minúsculas o mixto
 
-porcentaje_provincias = {"VA": 0.55, "MA": 0.10}
+porcentaje_provincias = {"VA": 0.55, "MA": 0.10,
+                         "VALENCIA": 0.55, "MALAGA": 0.10}
 
 subtotal = input("Introduzca el importe: ")
 subtotal = float(subtotal)
 pais = input("Introduzca la provincia: ")
 
-tasa = subtotal * porcentaje_provincias[pais]
+tasa = subtotal * porcentaje_provincias[pais.upper()]
 
 total = subtotal + tasa
 
