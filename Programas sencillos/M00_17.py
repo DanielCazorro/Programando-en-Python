@@ -18,7 +18,7 @@
 
 tipo = input(
     "Introduzca la temperatura a convertir (Celsius/Fahrenheit): ")
-temperatura_inicial = input("Introduzca la temperatura: ")
+temperatura_inicial = input("Valor de la temperatura: ")
 temperatura_inicial = float(temperatura_inicial)
 
 if tipo.upper() == "CELSIUS":
