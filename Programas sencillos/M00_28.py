@@ -32,4 +32,4 @@ while valor <= 0:
 start_valor = valor
 
 for number in range(1,11):
-    print (f"{start_valor} x {number} = {valor}")
+    print (f"{start_valor} x {number:^5} = {valor:>8}")
