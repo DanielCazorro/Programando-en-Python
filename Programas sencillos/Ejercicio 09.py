@@ -15,7 +15,7 @@ def vasosReciclados(vasos_recogidos, vasos_necesarios):
 
         vasos_fabricados += vasos_reciclados
     
-    print(vasos_fabricados)
-    return vasos_fabricados
+    print(vasos_fabricados + 1)
+    return vasos_fabricados + 1
 
 vasosReciclados(70,4)
